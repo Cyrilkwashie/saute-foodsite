@@ -1,4 +1,4 @@
-import storyImage from '@/assets/story-people.jpg';
+import storyImage from '@/assets/story-ingredients.jpg';
 
 const StorySection = () => {
   return (
@@ -10,7 +10,7 @@ const StorySection = () => {
             <div className="overflow-hidden rounded-2xl">
               <img
                 src={storyImage}
-                alt="Two founders of Brunch & Co - passionate about gourmet breakfast"
+                alt="Premium brunch ingredients artfully arranged - fresh avocados, artisan bread, and gourmet coffee"
                 className="w-full h-auto object-cover"
               />
             </div>
