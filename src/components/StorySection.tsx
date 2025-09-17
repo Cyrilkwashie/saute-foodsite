@@ -10,7 +10,7 @@ const StorySection = () => {
             <div className="overflow-hidden rounded-2xl">
               <img
                 src={storyImage}
-                alt="Two founders of Sauté - passionate about Indian cuisine"
+                alt="Two founders of Brunch & Co - passionate about gourmet breakfast"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -24,17 +24,17 @@ const StorySection = () => {
             
             <div className="space-y-4 text-luxury text-muted-foreground">
               <p>
-                At the heart of our kitchen is a passion for bold flavors and 
-                timeless tradition. What began as a love for authentic recipes 
-                has grown into a brand that celebrates the richness and diversity 
-                of Indian cuisine.
+                At the heart of our kitchen is a passion for perfect mornings and 
+                timeless brunch traditions. What began as a love for weekend gatherings 
+                has grown into a brand that celebrates the art of elevated breakfast 
+                and the joy of sharing meals.
               </p>
               
               <p>
-                We're here to serve not just food, but memories—crafted with care, 
-                rooted in tradition, and designed for today's taste. Every spice 
-                tells a story, every recipe carries heritage, and every meal 
-                creates connections.
+                We're here to serve not just food, but experiences—crafted with care, 
+                rooted in quality, and designed for today's sophisticated palate. Every 
+                ingredient tells a story, every recipe carries tradition, and every 
+                morning becomes a celebration.
               </p>
             </div>
 

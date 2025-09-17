@@ -1,4 +1,4 @@
-import heroImage from '@/assets/hero-bg.jpg';
+import heroImage from '@/assets/hero-bg-brunch.jpg';
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
-          alt="Authentic Indian spices and food on dark wooden table"
+          alt="Gourmet brunch spread with pancakes, eggs benedict, and artisan coffee"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/80"></div>
@@ -16,14 +16,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="heading-hero text-foreground mb-6 animate-fade-in">
-          Bringing the{' '}
-          <span className="text-gradient-gold">Flavors of India</span>{' '}
-          to Your Kitchen
+          Bringing{' '}
+          <span className="text-gradient-gold">Gourmet Mornings</span>{' '}
+          to Your Table
         </h1>
         
         <p className="text-luxury text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-delay">
-          Experience the warmth, color, and spice of authentic Indian recipes and ingredients. 
-          Discover traditional flavors crafted with care and passion.
+          Experience the art of elevated brunch with premium ingredients, artisan mixes, 
+          and recipes that transform every morning into a luxurious dining experience.
         </p>
 
         <button className="btn-gold animate-fade-in-delay-2">
@@ -31,7 +31,7 @@ const Hero = () => {
         </button>
       </div>
 
-      {/* Floating Spice Elements */}
+      {/* Floating Coffee Bean Elements */}
       <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary rounded-full animate-spice opacity-60"></div>
       <div className="absolute top-3/4 right-1/4 w-6 h-6 bg-accent rounded-full animate-spice opacity-40" style={{ animationDelay: '1s' }}></div>
       <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-primary rounded-full animate-spice opacity-70" style={{ animationDelay: '2s' }}></div>

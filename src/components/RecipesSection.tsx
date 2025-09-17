@@ -1,33 +1,33 @@
-import alooJeera from '@/assets/recipe-aloo-jeera.jpg';
-import choleBhature from '@/assets/recipe-chole-bhature.jpg';
-import tandooriChicken from '@/assets/recipe-tandoori-chicken.jpg';
-import butterChicken from '@/assets/recipe-butter-chicken.jpg';
+import eggsBenedict from '@/assets/recipe-eggs-benedict.jpg';
+import fluffyPancakes from '@/assets/recipe-fluffy-pancakes.jpg';
+import perfectAvocadoToast from '@/assets/recipe-perfect-avocado-toast.jpg';
+import goldenFrenchToast from '@/assets/recipe-golden-french-toast.jpg';
 
 const RecipesSection = () => {
   const recipes = [
     {
       id: 1,
-      name: 'Aloo Jeera',
-      description: 'Simple, fragrant spiced potatoes with cumin.',
-      image: alooJeera,
+      name: 'Classic Eggs Benedict',
+      description: 'Perfectly poached eggs with rich hollandaise sauce.',
+      image: eggsBenedict,
     },
     {
       id: 2,
-      name: 'Chole Bhature',
-      description: 'Crispy, fluffy bread paired with spicy chickpea curry.',
-      image: choleBhature,
+      name: 'Fluffy Pancakes',
+      description: 'Light, airy pancakes with golden maple syrup.',
+      image: fluffyPancakes,
     },
     {
       id: 3,
-      name: 'Tandoori Chicken',
-      description: 'Smoky, charred perfection marinated in yogurt and spices.',
-      image: tandooriChicken,
+      name: 'Perfect Avocado Toast',
+      description: 'Creamy avocado on artisan bread with poached egg.',
+      image: perfectAvocadoToast,
     },
     {
       id: 4,
-      name: 'Butter Chicken',
-      description: 'Rich, creamy, and bursting with flavor.',
-      image: butterChicken,
+      name: 'Golden French Toast',
+      description: 'Crispy outside, custardy inside with fresh berries.',
+      image: goldenFrenchToast,
     },
   ];
 
@@ -37,7 +37,7 @@ const RecipesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="heading-section text-foreground mb-6">
-            Teaser of Featured Indian Recipes
+            Featured Brunch Recipes
           </h2>
         </div>
 

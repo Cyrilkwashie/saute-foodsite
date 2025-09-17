@@ -27,14 +27,14 @@ const Footer = () => {
           {/* Brand and Copyright */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={logoImage} alt="Sauté Logo" className="w-8 h-8" />
-              <span className="font-playfair text-xl font-bold text-primary">Sauté</span>
+              <img src={logoImage} alt="Brunch & Co Logo" className="w-8 h-8" />
+              <span className="font-playfair text-xl font-bold text-primary">Brunch & Co</span>
             </div>
             
             <p className="text-sm text-muted-foreground leading-relaxed">
-              © 2023 Sauté. All rights reserved. We're passionate about connecting 
-              people through the authentic flavors of India, bringing tradition 
-              and taste to kitchens worldwide.
+              © 2023 Brunch & Co. All rights reserved. We're passionate about creating 
+              perfect mornings through artisan breakfast ingredients, premium coffee, 
+              and recipes that bring people together around the table.
             </p>
 
             {/* Social Icons */}

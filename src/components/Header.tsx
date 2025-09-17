@@ -10,7 +10,7 @@ const Header = () => {
     { name: 'Our Products', href: '#products' },
     { name: 'Recipes', href: '#recipes' },
     { name: 'Our Story', href: '#story' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Reviews', href: '#reviews' },
   ];
 
   return (
@@ -18,8 +18,8 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img src={logoImage} alt="Sauté Logo" className="w-8 h-8 md:w-10 md:h-10" />
-          <span className="font-playfair text-xl md:text-2xl font-bold text-primary">Sauté</span>
+          <img src={logoImage} alt="Brunch & Co Logo" className="w-8 h-8 md:w-10 md:h-10" />
+          <span className="font-playfair text-xl md:text-2xl font-bold text-primary">Brunch & Co</span>
         </div>
 
         {/* Desktop Navigation */}

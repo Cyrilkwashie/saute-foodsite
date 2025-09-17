@@ -1,35 +1,35 @@
-import basmatiRice from '@/assets/product-basmati-rice.jpg';
-import golGappe from '@/assets/product-gol-gappe.jpg';
-import yogurtSalad from '@/assets/product-yogurt-salad.jpg';
-import coconutCurry from '@/assets/product-coconut-curry.jpg';
-import chaiParatha from '@/assets/product-chai-paratha.jpg';
+import pancakeMix from '@/assets/product-pancake-mix.jpg';
+import avocadoToast from '@/assets/product-avocado-toast.jpg';
+import coffeeBlend from '@/assets/product-coffee-blend.jpg';
+import frenchToast from '@/assets/product-french-toast.jpg';
+import breakfastBurrito from '@/assets/product-breakfast-burrito.jpg';
 
 const ProductsSection = () => {
   const products = [
     {
       id: 1,
-      name: 'Royal Basmati Rice',
-      image: basmatiRice,
+      name: 'Artisan Pancake Mix',
+      image: pancakeMix,
     },
     {
       id: 2,
-      name: 'Tamarind Gol Gappe Kit',
-      image: golGappe,
+      name: 'Avocado Toast Kit',
+      image: avocadoToast,
     },
     {
       id: 3,
-      name: 'Minty Yogurt Salad',
-      image: yogurtSalad,
+      name: 'Gourmet Coffee Blend',
+      image: coffeeBlend,
     },
     {
       id: 4,
-      name: 'Coconut Curry Mix',
-      image: coconutCurry,
+      name: 'French Toast Batter',
+      image: frenchToast,
     },
     {
       id: 5,
-      name: 'Chai Paratha Combo',
-      image: chaiParatha,
+      name: 'Breakfast Burrito Kit',
+      image: breakfastBurrito,
     },
   ];
 

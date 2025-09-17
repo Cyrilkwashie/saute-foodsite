@@ -18,10 +18,10 @@ const NewsletterSection = () => {
           {/* Section Header */}
           <div className="mb-12">
             <h2 className="heading-section text-foreground mb-6">
-              Stay in the Flavor Loop
+              Stay in the Morning Loop
             </h2>
             <p className="text-luxury text-muted-foreground max-w-2xl mx-auto">
-              Get the latest recipes, exclusive offers, and tasty updates 
+              Get the latest brunch recipes, exclusive breakfast blends, and morning inspiration 
               delivered straight to your inbox.
             </p>
           </div>
