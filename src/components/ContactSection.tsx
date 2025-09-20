@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import mapImage from '@/assets/map.jpg';
+import mapImage from '@/assets/map-tarkwa-ghana.jpg';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -86,7 +86,7 @@ const ContactSection = () => {
             <div className="overflow-hidden rounded-2xl h-full min-h-[400px]">
               <img
                 src={mapImage}
-                alt="World map showing India and Nepal with location marker"
+                alt="Map of Ghana highlighting Tarkwa, our home location"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-background/10"></div>

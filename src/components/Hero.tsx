@@ -16,14 +16,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="heading-hero text-foreground mb-6 animate-fade-in">
-          Bringing{' '}
-          <span className="text-gradient-gold">Gourmet Mornings</span>{' '}
-          to Your Table
+          Bringing the Art of{' '}
+          <span className="text-gradient-gold">Saute</span>{' '}
+          to Your Kitchen
         </h1>
         
         <p className="text-luxury text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-delay">
-          Experience the art of elevated brunch with premium ingredients, artisan mixes, 
-          and recipes that transform every morning into a luxurious dining experience.
+          Experience the sweetness, artistry, and perfection of gourmet desserts 
+          crafted with premium ingredients and traditional sauté techniques.
         </p>
 
         <button className="btn-gold animate-fade-in-delay-2">

@@ -1,4 +1,4 @@
-import storyImage from '@/assets/story-ingredients.jpg';
+import storyImage from '@/assets/story-saute.jpg';
 
 const StorySection = () => {
   return (
@@ -10,7 +10,7 @@ const StorySection = () => {
             <div className="overflow-hidden rounded-2xl">
               <img
                 src={storyImage}
-                alt="Premium brunch ingredients artfully arranged - fresh avocados, artisan bread, and gourmet coffee"
+                alt="Professional chef demonstrating saute cooking technique with flames and steam"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -24,17 +24,17 @@ const StorySection = () => {
             
             <div className="space-y-4 text-luxury text-muted-foreground">
               <p>
-                At the heart of our kitchen is a passion for perfect mornings and 
-                timeless brunch traditions. What began as a love for weekend gatherings 
-                has grown into a brand that celebrates the art of elevated breakfast 
-                and the joy of sharing meals.
+                At the heart of our kitchen is a passion for the perfect sauté technique and 
+                artisanal dessert traditions. What began as a love for crafting beautiful 
+                sweet treats has grown into a brand that celebrates the art of elevated 
+                desserts and the joy of sharing indulgent moments.
               </p>
               
               <p>
-                We're here to serve not just food, but experiences—crafted with care, 
-                rooted in quality, and designed for today's sophisticated palate. Every 
+                We're here to serve not just desserts, but experiences—crafted with care, 
+                rooted in quality, and designed for today's sophisticated sweet tooth. Every 
                 ingredient tells a story, every recipe carries tradition, and every 
-                morning becomes a celebration.
+                bite becomes a celebration.
               </p>
             </div>
 

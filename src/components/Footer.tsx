@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Instagram } from 'lucide-react';
-import logoImage from '@/assets/logo.png';
+import logoImage from '@/assets/saute-logo.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -27,14 +27,14 @@ const Footer = () => {
           {/* Brand and Copyright */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={logoImage} alt="Brunch & Co Logo" className="w-8 h-8" />
-              <span className="font-playfair text-xl font-bold text-primary">Brunch & Co</span>
+              <img src={logoImage} alt="Saute Logo" className="w-8 h-8" />
+              <span className="font-playfair text-xl font-bold text-primary">Saute</span>
             </div>
             
             <p className="text-sm text-muted-foreground leading-relaxed">
-              © 2023 Brunch & Co. All rights reserved. We're passionate about creating 
-              perfect mornings through artisan breakfast ingredients, premium coffee, 
-              and recipes that bring people together around the table.
+              © 2023 Saute. All rights reserved. We're passionate about creating 
+              exceptional dessert experiences through artisan ingredients, premium sauté techniques, 
+              and recipes that bring sweetness to every moment.
             </p>
 
             {/* Social Icons */}

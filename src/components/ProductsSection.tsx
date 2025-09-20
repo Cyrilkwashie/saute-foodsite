@@ -1,35 +1,47 @@
-import pancakeMix from '@/assets/product-pancake-mix.jpg';
-import avocadoToast from '@/assets/product-avocado-toast.jpg';
-import coffeeBlend from '@/assets/product-coffee-blend.jpg';
-import frenchToast from '@/assets/product-french-toast.jpg';
-import breakfastBurrito from '@/assets/product-breakfast-burrito.jpg';
+import { useNavigate } from 'react-router-dom';
+import chocolateCupcake from '@/assets/product-chocolate-cupcake.jpg';
+import fluffyPancakes from '@/assets/product-fluffy-pancakes.jpg';
+import redVelvetCake from '@/assets/product-red-velvet-cake.jpg';
+import berryWaffles from '@/assets/product-berry-waffles.jpg';
+import artisanDonuts from '@/assets/product-artisan-donuts.jpg';
 
 const ProductsSection = () => {
+  const navigate = useNavigate();
   const products = [
     {
       id: 1,
-      name: 'Artisan Pancake Mix',
-      image: pancakeMix,
+      name: 'Chocolate Cupcakes',
+      image: chocolateCupcake,
+      price: 12.99,
+      description: 'Rich chocolate cupcakes with velvety frosting'
     },
     {
       id: 2,
-      name: 'Avocado Toast Kit',
-      image: avocadoToast,
+      name: 'Fluffy Pancakes',
+      image: fluffyPancakes,
+      price: 8.99,
+      description: 'Stack of golden, fluffy pancakes with syrup'
     },
     {
       id: 3,
-      name: 'Gourmet Coffee Blend',
-      image: coffeeBlend,
+      name: 'Red Velvet Cake',
+      image: redVelvetCake,
+      price: 24.99,
+      description: 'Classic red velvet cake with cream cheese frosting'
     },
     {
       id: 4,
-      name: 'French Toast Batter',
-      image: frenchToast,
+      name: 'Berry Waffles',
+      image: berryWaffles,
+      price: 10.99,
+      description: 'Crispy waffles topped with fresh berries'
     },
     {
       id: 5,
-      name: 'Breakfast Burrito Kit',
-      image: breakfastBurrito,
+      name: 'Artisan Donuts',
+      image: artisanDonuts,
+      price: 6.99,
+      description: 'Handcrafted donuts with premium glazes'
     },
   ];
 
@@ -46,7 +58,11 @@ const ProductsSection = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {products.map((product) => (
-            <div key={product.id} className="card-luxury group cursor-pointer">
+            <div 
+              key={product.id} 
+              className="card-luxury group cursor-pointer"
+              onClick={() => navigate(`/product/${product.id}`)}
+            >
               <div className="aspect-square overflow-hidden">
                 <img
                   src={product.image}
@@ -58,6 +74,7 @@ const ProductsSection = () => {
                 <h3 className="heading-card text-foreground text-center group-hover:text-primary transition-colors duration-300">
                   {product.name}
                 </h3>
+                <p className="text-primary font-bold text-center mt-2">${product.price}</p>
               </div>
             </div>
           ))}
