@@ -27,12 +27,12 @@ const Footer = () => {
           {/* Brand and Copyright */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={logoImage} alt="Saute Logo" className="w-8 h-8" />
-              <span className="font-playfair text-xl font-bold text-primary">Saute</span>
+              <img src={logoImage} alt="Sauté Logo" className="w-8 h-8" />
+              <span className="font-playfair text-xl font-bold text-primary">Sauté</span>
             </div>
             
             <p className="text-sm text-muted-foreground leading-relaxed">
-              © 2023 Saute. All rights reserved. We're passionate about creating 
+              © 2023 Sauté. All rights reserved. We're passionate about creating 
               exceptional dessert experiences through artisan ingredients, premium sauté techniques, 
               and recipes that bring sweetness to every moment.
             </p>

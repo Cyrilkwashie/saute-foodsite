@@ -23,8 +23,8 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img src={logoImage} alt="Saute Logo" className="w-8 h-8 md:w-10 md:h-10" />
-          <span className="font-playfair text-xl md:text-2xl font-bold text-primary">Saute</span>
+          <img src={logoImage} alt="Sauté Logo" className="w-8 h-8 md:w-10 md:h-10" />
+          <span className="font-playfair text-xl md:text-2xl font-bold text-primary">Sauté</span>
         </div>
 
         {/* Desktop Navigation */}

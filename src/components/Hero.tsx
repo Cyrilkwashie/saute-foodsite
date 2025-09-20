@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="heading-hero text-foreground mb-6 animate-fade-in">
           Bringing the Art of{' '}
-          <span className="text-gradient-gold">Saute</span>{' '}
+          <span className="text-gradient-gold">Sauté</span>{' '}
           to Your Kitchen
         </h1>
         
