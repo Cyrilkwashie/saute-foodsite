@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Search, Menu, X, ShoppingCart } from 'lucide-react';
 import { useCart } from '@/contexts/CartContext';
 import logoImage from '@/assets/saute-logo.png';
@@ -16,6 +16,7 @@ const Header = () => {
     { name: 'Our Products', href: '#products' },
     { name: 'Our Story', href: '#story' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Admin', href: '/admin', isLink: true },
   ];
 
   return (
@@ -30,14 +31,25 @@ const Header = () => {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-8">
           {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="font-montserrat text-foreground hover:text-primary transition-colors duration-300 relative group"
-            >
-              {item.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            item.isLink ? (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="font-montserrat text-foreground hover:text-primary transition-colors duration-300 relative group"
+              >
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            ) : (
+              <a
+                key={item.name}
+                href={item.href}
+                className="font-montserrat text-foreground hover:text-primary transition-colors duration-300 relative group"
+              >
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            )
           ))}
         </div>
 
@@ -99,14 +111,25 @@ const Header = () => {
         <div className="lg:hidden bg-background/98 backdrop-blur-sm border-b border-border">
           <div className="container mx-auto px-4 py-4 space-y-4">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block font-montserrat text-foreground hover:text-primary transition-colors duration-300 py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
+              item.isLink ? (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block font-montserrat text-foreground hover:text-primary transition-colors duration-300 py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="block font-montserrat text-foreground hover:text-primary transition-colors duration-300 py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              )
             ))}
           </div>
         </div>
