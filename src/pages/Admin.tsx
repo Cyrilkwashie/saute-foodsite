@@ -38,12 +38,8 @@ interface Order {
 const Admin = () => {
   const { toast } = useToast();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  if (!isLoggedIn) {
-    return <AdminLogin onLogin={() => setIsLoggedIn(true)} />;
-  }
   
-  // Mock products data
+  // Mock products data - moved above conditional return
   const [products, setProducts] = useState<Product[]>([
     {
       id: 1,
@@ -74,7 +70,7 @@ const Admin = () => {
     }
   ]);
 
-  // Mock orders data
+  // Mock orders data - moved above conditional return
   const [orders] = useState<Order[]>([
     {
       id: 1001,
@@ -125,6 +121,11 @@ const Admin = () => {
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false);
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false);
+
+  // Early return after all hooks are declared
+  if (!isLoggedIn) {
+    return <AdminLogin onLogin={() => setIsLoggedIn(true)} />;
+  }
 
   const handleAddProduct = () => {
     if (!newProduct.name || !newProduct.price || !newProduct.description) {
