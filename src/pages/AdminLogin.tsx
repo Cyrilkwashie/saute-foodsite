@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Lock, Mail } from 'lucide-react';
+import adminBg from '@/assets/admin-login-bg.jpg';
 
 interface AdminLoginProps {
   onLogin: () => void;
@@ -37,8 +38,13 @@ const AdminLogin = ({ onLogin }: AdminLoginProps) => {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - Image/Branding */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-primary via-primary/90 to-primary/80 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
+        <img 
+          src={adminBg} 
+          alt="Restaurant kitchen" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 flex flex-col justify-center items-center p-12 text-white">
           <div className="text-center space-y-6">
             <h1 className="text-5xl font-bold">Sauté</h1>
